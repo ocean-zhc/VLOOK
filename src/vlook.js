@@ -1627,7 +1627,10 @@ function V_attrCSS(attrName, attrValue, op) {
 }
 
 // 内嵌的流媒体平台选择器
-let gSelector_iframeVideo = _iframe_ + V_attrCSS(_src_, `bilibili.com/` + _player_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `douyin.com/` + _player_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `ixigua.com/` + _iframe_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `qq.com/txp/` + _iframe_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `youtube.com/embed`, `*`);
+//let gSelector_iframeVideo = _iframe_ + V_attrCSS(_src_, `bilibili.com/` + _player_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `douyin.com/` + _player_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `ixigua.com/` + _iframe_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `qq.com/txp/` + _iframe_, `*`) + `,` + _iframe_ + V_attrCSS(_src_, `youtube.com/embed`, `*`);
+
+let gSelector_iframeVideo = _iframe_ + V_attrCSS(_src_, `youtube.com/embed`, `*`);
+
 
 /**
  * 修改文档的图标（即用于收藏夹、标签栏的图标）
